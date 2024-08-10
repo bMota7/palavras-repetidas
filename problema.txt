@@ -1,0 +1,7 @@
+Durante a escrita, é comum termos certos cacoetes, tanto quanto temos na fala.
+Ao escrever um texto sobre front-end (desenvolvimento de interface), por exemplo, é comum começar a repetir a palavra 
+front-end em um parágrafo, o que pode tornar a leitura um tanto estranha ao longo do tempo.
+Normalmente, o procedimento é ler o texto manualmente e fazer correções conforme necessário. Uma demanda real relacionada a isso:
+Criar um programa para realizar essa tarefa automaticamente. Em outras palavras, o programa analisaria um arquivo de texto, 
+independentemente do seu tamanho, identificaria onde palavras específicas se repetem (por exemplo, a palavra front-end aparecendo cinco vezes em um parágrafo) 
+e forneceria essas informações. Isso facilitaria bastante a revisão dos artigos científicos, a tese de mestrado, entre outros textos. 
