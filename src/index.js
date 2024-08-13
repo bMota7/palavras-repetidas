@@ -1,24 +1,10 @@
-const fs = require('fs'); // File system
-const trataErros = require('./erros/funcoesErro')
-const caminhoArquivo = process.argv; //vetor de argumento
-const link = caminhoArquivo[2];
-
-fs.readFile(link, 'utf-8', (erro, texto) => {
-    try {
-        if (erro) throw erro
-        contarPalavras(texto);
-    } catch (erro) {
-        trataErros(erro)
-    }
-})
-
-function contarPalavras(texto) {
+export function contarPalavras(texto) {
     const paragrafos = extraiParagrafos(texto);
     const contagem = paragrafos.flatMap((paragrafo) => {
         if (!paragrafo) return [];
         return verificaPalavrasDuplicadas(paragrafo);
     })
-    console.log(contagem)
+    return contagem
 }
 
 function extraiParagrafos(texto) {
